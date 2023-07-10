@@ -13,7 +13,7 @@ const defaultHttpContentLengthInBytes = [
   100000, 200000, 500000, 1000000, 1500000, 2000000, 3000000, 5000000, 10000000,
 ];
 
-const defaultLabels = ['path', 'status_code', 'method'];
+const defaultLabels = ['path', 'status_code', 'method', 'content_type'];
 const asArray = (maybeArray: Readonly<string[] | string>) =>
   Array.isArray(maybeArray) ? maybeArray : [maybeArray];
 

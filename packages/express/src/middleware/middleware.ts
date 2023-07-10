@@ -111,6 +111,7 @@ const createMiddleware = (
             req: request,
             res: response,
           }),
+          content_type: response.getHeader("Content-Type") || "unknown",
         },
         allDefaultedOptions.getLabelValues?.(request, response)
       );
